@@ -1,8 +1,5 @@
 import React from 'react';
 
-const onSearchChange = () => {
-    
-}
 
 const SearchBox = (props) => {
     return (
@@ -10,7 +7,9 @@ const SearchBox = (props) => {
             <input
                 className='pa3 ba b-green bg-lightest-blue'
                 type='search'
-            placeholder='Search Robots'
+                placeholder='Search Robots'
+                onChange={props.searchChange}
+                name="searchBar"
             ></input>
         </div>
     )
